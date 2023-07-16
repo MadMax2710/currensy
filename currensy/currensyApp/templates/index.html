@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load static %}
 <html>
 	<head>
 		<title>Currensy</title>
@@ -7,6 +6,30 @@
 	</head>
 
 	<body>
-		<p>currensy exchange</p>
+		<h1>Currency exchange</h1>
+		<div>
+			<input type="number" id="amount-one">
+			<select id="currency-input">
+				<option value="USD">USD</option>
+				<option value="GBR">GBR</option>
+				<option value="UAN">UAN</option>
+				<option value="EUR">EUR</option>
+			</select>
+		</div>
+		<button id="exchange">
+			Convert
+		</button>
+		<div>
+			<input type="number" id="amount-two">
+			<select id="currency_output">
+				<option value="USD">USD</option>
+				<option value="GBR">GBR</option>
+				<option value="UAN">UAN</option>
+				<option value="EUR">EUR</option>
+			</select>
+		</div>
+		<div id="rate"></div>
+		<script type="text/javascript" src="../static/js/app.js"></script>
+		<!-- <script type="text/javascript" src="app.js"></script> -->
 	</body>
 </html>
